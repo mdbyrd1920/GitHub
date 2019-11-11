@@ -1,4 +1,4 @@
-<?php 
+<?php
         <section>
             <div class="container">
                 <div class="edit-entry">
@@ -20,10 +20,4 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div>
-                &copy; MyJournal
-            </div>
-        </footer>
-    </body>
-</html>
+      
