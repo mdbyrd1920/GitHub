@@ -1,4 +1,7 @@
 <?php
+include ("inc/functions.php");
+
+?>
 
 <section>
     <div class="container">

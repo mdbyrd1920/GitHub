@@ -1,4 +1,7 @@
-<?php 
+<?php
+include ("inc/functions.php");
+include ("inc/header.php");
+?>
         <section>
             <div class="container">
                 <div class="entry-list">
