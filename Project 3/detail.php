@@ -31,6 +31,6 @@ include ("inc/functions.php");
         </div>
     </div>
     <div class="edit">
-        <p><a href="edit.html">Edit Entry</a></p>
+        <p><a href="edit.php">Edit Entry</a></p>
     </div>
 </section>

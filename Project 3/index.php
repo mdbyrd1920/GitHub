@@ -2,6 +2,8 @@
 include ("inc/functions.php");
 include ("inc/header.php");
 ?>
+
+<!DOCTYPE html>
         <section>
             <div class="container">
                 <div class="entry-list">
