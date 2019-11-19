@@ -1,5 +1,5 @@
 <?php
-include ("inc/functions.php");
+require ("inc/functions.php");
 include ("inc/header.php");
 ?>
 
