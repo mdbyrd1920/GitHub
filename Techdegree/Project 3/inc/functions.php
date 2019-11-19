@@ -29,6 +29,7 @@ include("connection.php");
 function add_entry($title, $date, $time_spent, $learned, $resources) {
   include("connection.php");
 
+
   $sql = 'INSERT INTO
           entries(title, date, time_spent, learned, resources)
           VALUES(?, ?, ?, ?, ?, ?)';
