@@ -32,5 +32,6 @@ include ("inc/functions.php");
     </div>
     <div class="edit">
         <p><a href="edit.php">Edit Entry</a></p>
+<?php include ("inc/footer.php");?>
     </div>
 </section>

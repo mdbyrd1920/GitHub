@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error_message = 'Please fill in the required fields';
   } else {
     if (add_entry($title, $date)) {
-      header('Location: ')
+      header('Location: index.php')
       exit;
     } else {
       $error_message = 'Could not add entry';

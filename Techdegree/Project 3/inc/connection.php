@@ -9,5 +9,5 @@ echo $e->getMessage();
   exit;
 }
 
-echo "Connected to the journal"
+echo "Connected to the journal database"
  ?>

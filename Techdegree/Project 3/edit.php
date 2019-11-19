@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+include ("inc/header.php");
+
+?>
         <section>
             <div class="container">
                 <div class="edit-entry">
@@ -16,6 +19,8 @@
                         <textarea id="resources-to-remember" rows="5" name="ResourcesToRemember"></textarea>
                         <input type="submit" value="Publish Entry" class="button">
                         <a href="#" class="button button-secondary">Cancel</a>
+<?php include ("inc/footer.php"); ?>
+
                     </form>
                 </div>
             </div>
