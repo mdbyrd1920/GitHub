@@ -22,7 +22,9 @@ include ("inc/header.php");
                     <article>
                         <h2><a href="detail_4.php">Dude, where’s my car?</a></h2>
                         <time datetime="2016-01-31">January 31, 2016</time>
+
                     </article>
                 </div>
             </div>
+  <?php include ("inc/footer.php");?>
         </section>

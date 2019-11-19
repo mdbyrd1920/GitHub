@@ -1,4 +1,5 @@
 <?php
+include ("inc/functions.php");
 include ("inc/header.php");
 
 ?>
@@ -19,9 +20,8 @@ include ("inc/header.php");
                         <textarea id="resources-to-remember" rows="5" name="ResourcesToRemember"></textarea>
                         <input type="submit" value="Publish Entry" class="button">
                         <a href="#" class="button button-secondary">Cancel</a>
-<?php include ("inc/footer.php"); ?>
-
                     </form>
                 </div>
             </div>
         </section>
+<?php include ("inc/footer.php"); ?>

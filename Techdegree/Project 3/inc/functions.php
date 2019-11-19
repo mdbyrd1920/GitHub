@@ -10,6 +10,18 @@ include("connection.php");
     }
   }
 
+  function journal_entry () {
+  include("connection.php");
+
+$sql = 'SELECT * FROM entries';
+    try {
+      $results = $db->query($sql);
+      } catch (Expection $e) {
+      echo "Unable to retrieve results" . $e->getMessage() . "</br>";
+      return array();
+      }
+    }
+
 function add_entry($id, $title, $date, $time_spent, $learned, $resources) {
   include("connection.php");
 

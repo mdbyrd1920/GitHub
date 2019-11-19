@@ -1,6 +1,8 @@
 <?php
 require 'inc/functions.php';
 
+$title = $date = $time_spent = $learned = $resources = '';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $title = trim (filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING));
   $date = trim (filter_input(INPUT_POST, 'date', FILTER_SANITIZE_STRING));
@@ -8,20 +10,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $learned = trim (filter_input(INPUT_POST, 'whatILearned', FILTER_SANITIZE_STRING));
   $resources = trim (filter_input(INPUT_POST, 'ResourcesToRemember', FILTER_SANITIZE_STRING));
 
-  if (empty ($title) || empty ($date)) {
+  if (empty ($title) || empty ($date) || empty ($time_spent) || empty ($learned) || empty ($resources)) {
     $error_message = 'Please fill in the required fields';
   } else {
-    if (add_entry($title, $date)) {
-      header('Location: index.php')
+    if (add_entry($title, $date, $time_spent, $learned, $resources)) {
+      header('Location: index.php');
       exit;
     } else {
       $error_message = 'Could not add entry';
 
             }
           }
-}
+  }
 
-include 'inc/header.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,10 +39,7 @@ include 'inc/header.php';
     <body>
         <header>
             <div class="container">
-                <div class="site-header">
-                    <a class="logo" href="index.php"><i class="material-icons">library_books</i></a>
-                    <a class="button icon-right" href="new.php"><span>New Entry</span> <i class="material-icons">add</i></a>
-                </div>
+
             </div>
         </header>
         <section>
