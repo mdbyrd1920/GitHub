@@ -1,5 +1,6 @@
 <?php
 require 'inc/functions.php';
+include ("inc/header.php");
 
 $title = $date = $time_spent = $learned = $resources = '';
 
